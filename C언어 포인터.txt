@@ -1,0 +1,75 @@
+<포인터>
+EX_1)
+              int a = 20;
+	int *ptr_a;  <<포인터 선언!
+
+	ptr_a = &a;  //ptr_a이라는 포인터에 a 의 주소값을 저장!
+
+	printf("a의 값: %d\n", a);    <<20
+	printf("a의 주소값: %d\n", &a);    << 변수 a의 주소
+	printf("ptr_a에 저장된값: %d\n", ptr_a);  << ptr_a역시 변수 a의 값이 들어와있다.
+	printf("ptr_a가 가리키는 변수의 값: %d\n", *ptr_a);  << ptr_a의 가르키는 값 즉 a의 주소의 가르키는 값  20이 나온다.
+
+<포인터의 변형>
+EX_2)
+
+              int a = 10;
+	int b = 20;
+	int* ptr;
+
+	ptr = &a;
+	printf("ptr이 가르키는 변수에 저장된값 %d\n", *ptr);  <<a 값이 나온다.
+
+	ptr = &b;  << 포인터에 새로운 변수 b의 주소값을 다시 대입한다.
+	printf("ptr이 가르키는 변수에 저장된값 %d\n", *ptr);   <<b 값이 나온다.
+
+<포인터의 포인터>
+EX_3)
+              
+              int a = 10;
+	int* ptr;   <<포인터 선언
+	ptr = &a;   <<a 값 주소 저장
+	int** ptr_ptr;  << 포인터 선언 (포인터의 포인터)
+	ptr_ptr = &ptr;  << 포인터의 주소값은 포인터의 포인터의 값에 저장
+
+	printf("a=%d\n", a);  <<10
+	printf("&a=%d\n", &a);  <<a의 주소
+	printf("ptr=%d\n", ptr);  << 포인터의 값출력(a의 주소)
+	printf("&ptr=%d\n", &ptr); <<포인터의 주소값을 출력
+	printf("**ptr_ptr=%d\n", **ptr_ptr);  <<포인터의 포인터의 값을 출력   "10"
+
+<추가내용>
+EX_4)
+
+
+	int a = 10;
+	int* ptr_a = &a;
+	
+	printf("ptr의 값 %d\n", ptr_a);
+	printf("ptr+1의 값 %d\n", ptr_a + 1); << ptr_a 의 선언의 포인트 자료형에따라서 크기가 늘어난다.
+	
+	int aar[10] = { 1,2,3,4,5,6,7,8,9,10 };
+
+	printf("arr의값 : %d\n", &aar);  //&arr[0] =&aar 같은 주소값
+              결국 aar[0]+1 == aar[1]
+
+
+              int aar[10] = { 1,2,3,4,5,6,7,8,9,10 };   << 배열선언
+
+	printf("arr의값 : %d\n", &aar);  //&arr[0]이랑 같은 주소값
+
+	for (int i = 0; i < 10; i++) {
+		printf("%d ", aar[i]);   <<1 ,2,3,4,5,6,7,8,9,10
+	}
+	printf("\n");
+	for (int i = 0; i < 10; i++) {
+		printf("%d ", *(aar+i));  <<i가 0일때 *(aar+0) 이면 &aar[0]의미..
+		//aar+i == &aar[i]
+
+	}
+	printf("\n");
+	for (int *ptr = aar; ptr < aar+10; ptr++) {  << 이해가 안된다면 포인터 다시 공부!!
+		printf("%d ", *ptr);
+		//aar+i == &aar[i]
+
+	}
