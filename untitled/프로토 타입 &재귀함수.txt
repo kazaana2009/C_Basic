@@ -1,0 +1,53 @@
+1.프로토 타입
+
+함수 프로토타입 선언은 "함수정의가 뒤에 나올 거니까 에러 없이 넘어가줘"라고 우리에게 말해주는 것
+
+Ex)
+#include <stdio.h>
+//프로토타입(prototype) :원형 시제품
+
+
+
+void work(int);
+void rotate(int);
+void drawSqure();
+
+//메인
+int main() {
+drawSqure();
+
+}
+
+//Ex) 걷기 기능
+void work(int distance){
+    printf("%d 를 걸었습니다.\n",distance);
+}
+
+// 돌기 기능
+void rotate(int angle){
+    printf("%d 를 회전했습니다.\n",angle);
+}
+//사각형 걷기
+void drawSqure(){
+    for(int i=0;i<=4;i++){
+        work(10);
+        rotate(90);
+    }
+}
+
+2.재귀함수
+재귀함수란 자기자신을 계속 호출하는 형태를 말한다.
+Ex
+
+//재귀함수를 이용한 팩토리얼 구하기
+#include <stdio.h>
+int fac(int n){
+    if(n==1)
+        return 1;
+
+
+    return *fac(n-1);
+}
+int main(){
+    printf("%d\n",fac(10));
+}
