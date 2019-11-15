@@ -11,7 +11,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7902f2b5-c1a1-41eb-ace8-e792cf71b51f" name="Default Changelist" comment="" />
+    <list default="true" id="7902f2b5-c1a1-41eb-ace8-e792cf71b51f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled1/.idea/untitled1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/.idea/untitled2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/.idea/untitled3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled4/.idea/untitled4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled4/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +33,20 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1PxoiREDNqLCo1dEN7hZAwuxgcD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -55,11 +77,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566825234168</updated>
-      <workItem from="1566825235458" duration="1660000" />
+      <workItem from="1566825235458" duration="2042000" />
+      <workItem from="1570195650202" duration="79000" />
+      <workItem from="1570791853355" duration="39000" />
+      <workItem from="1570792142360" duration="5000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
